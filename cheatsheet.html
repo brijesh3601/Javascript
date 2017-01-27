@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Hello World using SFX</title>
+        <script src="dparser.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </head>
+
+
+    <script>
+
+
+        $(function() {
+
+            //camelcase
+            var str = "apple carrot".replace(/(?:^|\s)\w/g, function(match) { return match.toUpperCase();  });
+            $("#camelCase").text("Converting to camel case text='apple carrot'" + str);
+            //camelcase-end
+
+
+            
+     
+       });
+
+
+
+    </script>
+
+        <ul>
+            <li id="camelCase"></li>
+        </ul>
+        
+
+
+    <body>
+
+        
+    </body>
+</html>
