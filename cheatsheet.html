@@ -15,6 +15,14 @@
             var str = "apple carrot".replace(/(?:^|\s)\w/g, function(match) { return match.toUpperCase();  });
             $("#camelCase").text("Converting to camel case text='apple carrot'" + str);
             //camelcase-end
+            
+           // create camel case header by split , joining & replace with uppercase & lower case, instead of split you can replace "_" with space too to have the same result
+           let fmtHdr = function(str){
+            return str.split("_").join(" ").replace(/\w+/g, function(match) { return  match.charAt(0).toUpperCase() + match.slice(1).toLowerCase()});
+           };
+            
+            
+            console.log(fmtHdr("country_code"));
 
 
             
