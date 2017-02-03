@@ -23,6 +23,14 @@
             
             
             console.log(fmtHdr("country_code"));
+            
+            
+            //find tags
+            
+            var w ="(<tbody>)|(</tbody>)"
+            var rx = new RegExp(w, 'g');
+
+            console.log("find tags <tbody> some text </tbody><tbody> aaa </tbody>".match(rx))
 
 
             
